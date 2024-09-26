@@ -41,3 +41,5 @@ class TestCreate:
         '''creates a table "bears" with a primary key "id".'''
         columns = [column for column in cursor.execute("PRAGMA table_info(bears);")]
         assert(columns[0][1] == "id")
+
+    
